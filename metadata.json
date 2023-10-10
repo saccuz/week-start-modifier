@@ -1,0 +1,8 @@
+{
+  "name": "Week Start Modifier",
+  "description": "Modify starting day of the week",
+  "uuid": "week-start-modifier@saccuzm@gmail.com",
+  "shell-version": [
+    "45"
+  ]
+}
