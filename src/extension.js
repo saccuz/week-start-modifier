@@ -16,11 +16,19 @@
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
+import Shell from 'gi://Shell';
+import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
-export default class PlainExampleExtension extends Extension {
+const DateMenu = Main.panel.statusArea.dateMenu;
+
+export default class WeekCalendarModifier extends Extension {
     enable() {
+        DateMenu._calendar._weekStart = 1; // monday
+        DateMenu._calendar._onSettingsChange();
     }
 
     disable() {
+        DateMenu._calendar._weekStart = Shell.util_get_week_start();
+        DateMenu._calendar._onSettingsChange();
     }
 }
