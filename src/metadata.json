@@ -6,5 +6,6 @@
     "45"
   ],
   "url":"https://github.com/saccuz/week-start-modifier",
-  "settings-schema": "org.gnome.shell.extensions.weekstartmodifier"
+  "settings-schema": "org.gnome.shell.extensions.weekstartmodifier",
+  "gettext-domain": "weekstartmodifier@saccuzm@gmail.com"
 }

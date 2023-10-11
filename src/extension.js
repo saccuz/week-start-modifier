@@ -18,7 +18,6 @@
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import Shell from 'gi://Shell';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
-// import * as DateMenu from 'resource:///org/gnome/shell/ui/dateMenu.js';
 
 const DateMenu = Main.panel.statusArea.dateMenu;
 
