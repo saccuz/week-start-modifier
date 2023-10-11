@@ -20,6 +20,7 @@ import Shell from 'gi://Shell';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
 
 const DateMenu = Main.panel.statusArea.dateMenu;
+let handId = null;
 
 export default class WeekCalendarModifier extends Extension {
     enable() {
@@ -28,7 +29,7 @@ export default class WeekCalendarModifier extends Extension {
         DateMenu._calendar._weekStart = 1; // Monday
         DateMenu._calendar._onSettingsChange();
 
-        this._settings.connect('changed::day', (settings, key) => {
+        handId = this._settings.connect('changed::day', (settings, key) => {
             DateMenu._calendar._weekStart = settings.get_int(key);
             DateMenu._calendar._onSettingsChange();
         });
@@ -37,6 +38,10 @@ export default class WeekCalendarModifier extends Extension {
     disable() {
         DateMenu._calendar._weekStart = Shell.util_get_week_start();
         DateMenu._calendar._onSettingsChange();
+        if (handId) {
+            this._settings.disconnect(handId);
+            handId = null;
+        }
         this._settings = null;
     }
 }
