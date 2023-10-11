@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.weekstartmodifier" path="/org/gnome/shell/extensions/weekstartmodifier/">
+    <key name="day" type="i">
+    <range min="0" max="6"/>
+      <default>1</default>
+    </key>
+  </schema>
+</schemalist>

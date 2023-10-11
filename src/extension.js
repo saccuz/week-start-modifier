@@ -18,17 +18,26 @@
 import {Extension} from 'resource:///org/gnome/shell/extensions/extension.js';
 import Shell from 'gi://Shell';
 import * as Main from 'resource:///org/gnome/shell/ui/main.js';
+// import * as DateMenu from 'resource:///org/gnome/shell/ui/dateMenu.js';
 
 const DateMenu = Main.panel.statusArea.dateMenu;
 
 export default class WeekCalendarModifier extends Extension {
     enable() {
-        DateMenu._calendar._weekStart = 1; // monday
+        this._settings = this.getSettings();
+
+        DateMenu._calendar._weekStart = 1; // Monday
         DateMenu._calendar._onSettingsChange();
+
+        this._settings.connect('changed::day', (settings, key) => {
+            DateMenu._calendar._weekStart = settings.get_int(key);
+            DateMenu._calendar._onSettingsChange();
+        });
     }
 
     disable() {
         DateMenu._calendar._weekStart = Shell.util_get_week_start();
         DateMenu._calendar._onSettingsChange();
+        this._settings = null;
     }
 }
