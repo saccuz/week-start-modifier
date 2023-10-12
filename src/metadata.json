@@ -1,11 +1,11 @@
 {
   "name": "Week Start Modifier",
   "description": "Modify starting day of the week",
-  "uuid": "weekstartmodifier@saccuzm@gmail.com",
+  "uuid": "weekstartmodifier@saccuzm.gmail.com",
   "shell-version": [
     "45"
   ],
   "url":"https://github.com/saccuz/week-start-modifier",
   "settings-schema": "org.gnome.shell.extensions.weekstartmodifier",
-  "gettext-domain": "weekstartmodifier@saccuzm@gmail.com"
+  "gettext-domain": "weekstartmodifier@saccuzm.gmail.com"
 }
