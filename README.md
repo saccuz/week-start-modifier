@@ -10,5 +10,5 @@ Download the [zip file](https://github.com/saccuz/week-start-modifier/releases/d
 from the GitHub [releases page](https://github.com/saccuz/week-start-modifier/releases) and run:
 
 ``` shell
-gnome-extensions install weekstartmodifier@saccuzm@gmail.com.shell-extension.zip
+gnome-extensions install weekstartmodifier@saccuzm.gmail.com.shell-extension.zip
 ```
