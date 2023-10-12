@@ -6,7 +6,7 @@ Thanks to [F-i-f](https://github.com/F-i-f/weeks-start-on-monday) for inspiratio
 
 ## Download and Install
 
-Download the [zip file](https://github.com/saccuz/week-start-modifier/releases/download/stable/weekstartmodifier@saccuzm@gmail.com.shell-extension.zip)
+Download the [zip file](https://github.com/saccuz/week-start-modifier/releases/download/stable/weekstartmodifier@saccuzm.gmail.com.shell-extension.zip)
 from the GitHub [releases page](https://github.com/saccuz/week-start-modifier/releases) and run:
 
 ``` shell
