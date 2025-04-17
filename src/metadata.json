@@ -3,7 +3,7 @@
   "description": "Modify starting day of the week",
   "uuid": "weekstartmodifier@saccuzm.gmail.com",
   "shell-version": [
-    "45","46","47"
+    "45","46","47","48"
   ],
   "url":"https://github.com/saccuz/week-start-modifier",
   "settings-schema": "org.gnome.shell.extensions.weekstartmodifier",
