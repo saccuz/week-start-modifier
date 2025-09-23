@@ -1,6 +1,6 @@
 # Week Start Modifier
 Another gnome-shell extension to set the first day of the week.
-Compatible only with Gnome 45.
+Compatible with Gnome 45 and after.
 
 Thanks to [F-i-f](https://github.com/F-i-f/weeks-start-on-monday) for inspiration.
 
